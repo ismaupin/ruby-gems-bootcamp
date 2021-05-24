@@ -1,9 +1,17 @@
 %h1
   Hello World!
-= link_to 'Privacy Policy', privacy_policy_path
 .card{:style => "width: 18rem;"}
   %img.card-img-top{:alt => "...", :src => "..."}/
   .card-body
     %h5.card-title Card title
     %p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
     %a.btn.btn-primary{:href => "#"} Go somewhere
+
+
+= link_to privacy_policy_path, class: 'btn btn-warning' do
+  %i.fas.fa-file
+  Privacy Policy
+%br/
+= link_to courses_path, class: 'btn btn-success' do
+  %i.fas.fa-book
+  Courses
